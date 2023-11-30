@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestAEON App</string>
+    <string name="_bank_name">AEON BANK</string>
+    <string name="_hint_login">login</string>
+    <string name="_hint_password">password</string>
+    <string name="_sign_in">sign in</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="_payments">Payments</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="_exit">exit</string>
+
+
+</resources>

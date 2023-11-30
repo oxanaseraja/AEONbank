@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_background"
+    tools:context=".AuthFragment">
+
+    <TextView
+        android:id="@+id/textBankName"
+        android:text="@string/_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/_silver"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+
+    <EditText
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="@string/_hint_login"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/_dark_silver"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBankName" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/_hint_password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/_dark_silver"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/_sign_in"
+        android:textColor="@color/_silver"
+        app:layout_constraintEnd_toEndOf="@+id/textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/_payments"
+        android:textColor="@color/_silver"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignIn"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/_error"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignIn"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
